@@ -9,7 +9,7 @@ button:hover{
 
 .step-container{
   width: 70vw;
-  height: 350px;
+  height: 420px;
   min-width: 700px;
   margin-left: 15vw;
   display: inline-block;
@@ -74,7 +74,7 @@ select{
 
 .time-button{
   min-width: 50px;
-  height: 50px;
+  height: 100px;
   width: 10vw;
   color: white;
   text-align: center;
