@@ -1,0 +1,153 @@
+
+<!-- saved from url=(0082)https://moodle.oamk.fi/pluginfile.php/203524/mod_resource/content/0/gsapIntro.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="./gsapIntro_files/TweenMax.min.js.download"></script>
+        <script>
+            window.onload = function() {
+
+                TweenLite.from(document.getElementById("e1"), // element
+                               2,   // duration
+                                {   // tween parameters
+                                    opacity:0,
+                                    left:"0px"
+                                });
+
+
+                TweenLite.from(document.getElementById("e2"), // element
+                               2,   // duration
+                               {   // tween parameters
+                                   x: 0
+                               });
+
+                TweenLite.to(document.getElementById("e3"), // element
+                               2,   // duration
+                               {       // tween parameters
+                                   x: 500,
+                                   delay: 3
+                               });
+
+                TweenLite.to(document.getElementById("e4"), // element
+                               4,   // duration
+                               {      // tween parameters
+                                    x: 500,
+                                    backgroundColor: "#00FF00",
+                                    delay: 1,
+                                    onCompleteParams: ["{self}"],
+                                    onComplete: function(a){
+                                        a.reverse();
+										document.getElementById("e4").innerHTML = "HEllo World"
+                                    }
+                               });
+                TweenMax.to(document.querySelectorAll(".e5"), // elements
+                               1,   // duration
+                               {    // tween parameters
+                                    x: function() // function based value
+                                    {
+                                        return Math.random() * 1000;
+                                    },
+                                    backgroundColor: "#FFFF00",
+                                    yoyo: true,  // executes automatic reverse
+                                    repeat: 2,  // -1 is repeat indefinitely
+                                    scale: 0.1,
+                                    delay: 1
+                               });
+
+                TweenLite.to(document.querySelectorAll("#e6"), // elements
+                               1,   // duration
+                               {    // tween parameters
+                                    x: 250,
+                                    scale: 0.1
+                               });
+                TweenLite.to(document.querySelectorAll("#e6"), // elements  //sequence animation
+                1,   // duration
+                {    // tween parameters
+                    x: 500,
+                    scale: 2,
+                    delay: 1
+                });
+
+                var e7tl = new TimelineMax({ repeat: -1, repeatDelay: 0 });
+                var e7 = document.querySelectorAll("#e7");
+                e7tl.add( TweenLite.to(e7, 1, { x: 250, borderRadius: 25, scale: 2, ease: Power1.easeIn}));
+                e7tl.add( TweenLite.to(e7, 1, { y: 100, ease: Power0.easeNone, backgroundColor: "#00FF00" }), "-=1" ) // The last parameter controls the position of the tween in timeline, -=1 moves it one second backwards
+                .add( TweenLite.to(e7, 1, { x: 0, scale: 4, ease: Power0.easeNone }) )
+                .add( TweenLite.to(e7, 2, { y: 0, borderRadius: 0, scale: 1, ease: Power1.easeOut }) );
+
+				// http://greensock.com/docs/#/HTML5/GSAP/TweenMax/staggerFrom/
+				TweenMax.staggerFrom(".e8",
+									1,
+									{scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true},
+									1);
+
+            }
+        </script><style></style>
+        <style>
+            *
+            {
+                color: white;
+            }
+
+            body
+            {
+                background-color: black;
+            }
+
+            div
+            {
+                width: 50px;
+                height: 50px;
+                background-color: red;
+            }
+
+            #e1
+            {
+                position: relative;
+            }
+
+            .e5
+            {
+                background-color: green;
+            }
+
+			.e8
+			{
+				float: left;
+				margin-right: 10px;
+			}
+        </style>
+    </head>
+    <body>
+        Example 1, Tweenlite.from based, CSS relative + left
+        <div id="e1" style="left: 500px; opacity: 1;">
+        </div>
+        Example 2, Tweenlite.from based, x coordinate without CSS relative
+        <div id="e2" style="transform: matrix(1, 0, 0, 1, 500, 0);">
+        </div>
+        Example 3, Tweenlite.to based, same as above with delay
+        <div id="e3" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+        </div>
+        Example 4, Tweenlite.to based with onComplete event handling
+        <div id="e4" style="background-color: rgb(255, 0, 0); transform: matrix(1, 0, 0, 1, 0, 0);">H3llo World</div>
+        Example 5, TweenMax.to based with function based values, yoyo and repeat
+        <div class="e5" style="background-color: rgb(210, 233, 0); transform: translate3d(490.273px, 0px, 0px) scale(0.25876, 0.25876);">
+        </div>
+        <div class="e5" style="background-color: rgb(210, 233, 0); transform: translate3d(142.937px, 0px, 0px) scale(0.25876, 0.25876);">
+        </div>
+        <div class="e5" style="background-color: rgb(210, 233, 0); transform: translate3d(803.764px, 0px, 0px) scale(0.25876, 0.25876);">
+        </div>
+        Example 6, TweenLite sequencing with delays
+        <div id="e6" style="transform: matrix(1, 0, 0, 1, 500, 0);">
+        </div>
+        Example 7, TimelineMax sequencing
+        <div id="e7" style="border-radius: 16px; transform: translate3d(0px, 62.41px, 0px) scale(2.8723, 2.8723);">
+        </div>
+		<p style="margin-top: 100px;">
+			Example 8, TweenMax staggering
+			</p><div class="e8" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+			<div class="e8" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+			<div class="e8" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+			<div class="e8" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+			<div class="e8" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+		<p></p>
+
+</body></html>

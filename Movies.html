@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>North Kino</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/clean-blog.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/Movies.css">
+    <script src="gsapIntro_files/TweenMax.min.js.download"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">North Kino</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Movies.html">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Schedules.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Theaters.html">Theaters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="Contact.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row" id="movietime">
+      <div class="col-sm-3" id="now" onclick="now()"><h3>Now playing</h3></div>
+      <div class="col-sm-3" id="soon" onclick="soon()"><h3>Coming soon</h3></div>
+    </div>
+    <div class="all">
+      <div class="" id="nowshowing">
+    <div class="poster-row" id="all-posters-row1">
+
+      <div class="pandb" id="pandb1">
+        <div>
+          <img src="image/poster1.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Get ticket</button>
+        </div>
+      </div>
+
+      <div class="pandb" id="pandb2">
+        <div>
+          <img src="image/poster2.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Get ticket</button>
+        </div>
+      </div>
+
+      <div class="pandb" id="pandb3">
+        <div>
+          <img src="image/poster3.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Get ticket</button>
+        </div>
+      </div>
+
+      <div class="pandb" id="pandb4">
+        <div>
+          <img src="image/poster4.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Get ticket</button>
+        </div>
+      </div>
+
+      <span class="stretch"></span>
+    </div>
+
+    <div class="poster-row" id="all-posters-row2">
+
+      <div class="pandb" id="pandb5">
+        <div>
+          <img src="image/poster5.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Get ticket</button>
+        </div>
+      </div>
+
+      <div class="pandb" id="pandb6">
+        <div>
+          <img src="image/poster6.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Get ticket</button>
+        </div>
+      </div>
+
+      <div class="pandb" id="pandb7">
+        <div>
+          <img src="image/poster7.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Get ticket</button>
+        </div>
+      </div>
+
+      <div class="pandb" id="pandb8">
+        <div>
+          <img src="image/poster8.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Get ticket</button>
+        </div>
+      </div>
+
+      <span class="stretch"></span>
+    </div>
+  </div>
+
+    <div class="" id="coming-soon">
+    <div class="poster-row" id="all-posters-row1">
+
+      <div class="pandbsoon" id="pandb1">
+        <div>
+          <img src="image/poster2.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Advance ticket</button>
+        </div>
+      </div>
+
+      <div class="pandbsoon" id="pandb2">
+        <div>
+          <img src="image/poster1.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Advance ticket</button>
+        </div>
+      </div>
+
+      <div class="pandbsoon" id="pandb3">
+        <div>
+          <img src="image/poster3.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Advance ticket</button>
+        </div>
+      </div>
+
+      <div class="pandbsoon" id="pandb4">
+        <div>
+          <img src="image/poster4.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Advance ticket</button>
+        </div>
+      </div>
+
+      <span class="stretch"></span>
+    </div>
+
+    <div class="poster-row" id="all-posters-row2">
+
+      <div class="pandbsoon" id="pandb5">
+        <div>
+          <img src="image/poster5.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Advance ticket</button>
+        </div>
+      </div>
+
+      <div class="pandbsoon" id="pandb6">
+        <div>
+          <img src="image/poster6.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Advance ticket</button>
+        </div>
+      </div>
+
+      <div class="pandbsoon" id="pandb7">
+        <div>
+          <img src="image/poster7.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Advance ticket</button>
+        </div>
+      </div>
+
+      <div class="pandbsoon" id="pandb8">
+        <div>
+          <img src="image/poster8.jpg">
+        </div>
+        <div class="imgButton">
+          <button type="button" class="btn btn-danger">Advance ticket</button>
+        </div>
+      </div>
+
+      <span class="stretch"></span>
+    </div>
+  </div>
+  </div>
+
+
+    <script src="gsapIntro_files/TweenMax.min.js.download"></script>
+    <script src="js/Movies.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>North Kino</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js" charset="utf-8"></script>
+      <link rel="stylesheet" href="css/MovieTicket.css">
+      <link rel="stylesheet" href="css/custom.css">
+      <script src="gsapIntro_files/TweenMax.min.js.download" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="navbar-movie">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">North Kino</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#two-tabs" id="Movies-nav">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Choose-Theaters.html">Schedules</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Choose-Theaters.html" id="navbardrop" data-toggle="dropdown">Theaters</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="Helsinki.html">Helsinki</a>
+                <a class="dropdown-item" href="Turku.html">Turku</a>
+                <a class="dropdown-item" href="Tampere.html">Tampere</a>
+                <a class="dropdown-item" href="Oulu.html">Oulu</a>
+                <a class="dropdown-item" href="Rovaniemi,html">Rovaniemi</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="step-container" id="step-1">
+      <img class="poster" src="image/poster3.jpg" alt="">
+
+      <div class="name-option">
+        <h1 class="name">Thor: Ragnarok</h1>
+
+        <select id="ChoosePlace" class="select-style">
+          <option>Select Theater</option>
+          <option>Helsinki</option>
+          <option>Turku</option>
+          <option>Tampere</option>
+          <option>Oulu</option>
+          <option>Rovaniemi</option>
+        </select>
+
+        <select id="ChooseDate" class="select-style" onchange="showDate()">
+          <option>Select Date</option>
+          <option>25/12/2017</option>
+          <option>26/12/2017</option>
+          <option>27/12/2017</option>
+          <option>28/12/2017</option>
+          <option>29/12/2017</option>
+        </select>
+
+        <div class="time">
+          <button class="time-button">8:45am</button>
+          <button class="time-button">10:15am</button>
+          <button class="time-button">11:45am</button>
+        </div>
+        <div class="time">
+          <button class="time-button">9:45pm</button>
+          <button class="time-button">10:45pm</button>
+        </div>
+
+        <a href="#step-2"><button id="next1" class="Next" onclick="showStep2()">Next</button></a>
+      </div>
+    </div>
+
+    <div class="step-container" id="step-2">
+      <h1>Choose the amount of ticket</h1>
+      <p>Please contact us if you you want to buy large quantity.</p>
+      <div class="adult-ticket">
+        <img src="image/minus.png" alt="" onclick="decrementValue()">
+        <h2 id="adult-number">0 Adult (€12)</h2>
+        <img src="image/plus.png" alt="" onclick="incrementValue()">
+      </div>
+
+      <div class="adult-ticket" id="child-ticket">
+        <img src="image/minus.png" alt="" onclick="decrementChild()">
+        <h2 id="child-number">0 Child (€8)</h2>
+        <img src="image/plus.png" alt="" onclick="incrementChild()">
+      </div>
+
+      <div class="Total">
+        <h2 id="totalamount">Total:</h2>
+      </div>
+
+      <a href="#step-3"><button id="next2" class="Next" onclick="showStep3()">Next</button></a>
+      <a href="#step-1"><button id="cancel2" class="Cancel" onclick="cancelStep2()">Cancel</button></a>
+    </div>
+
+    <div class="step-container" id="step-3">
+      <h1>Payment method</h1>
+
+      <form class="" action="index.html" method="post">
+        <p>Card Owner</p>
+        <input type="text" name="" value="">
+        <p>Card Number</p>
+        <input type="number" name="" value="">
+        <p>Expiration Date</p>
+        <input id="month" type="month">
+        <p>CV Code</p>
+        <input type="number" name="" value="" maxlength="3">
+      </form>
+
+
+      <a href="#"><button id="next3" class="Next" onclick="show()">Confirm</button></a>
+      <a href="#step-2"><button id="cancel3" class="Cancel" onclick="cancelStep3()">Cancel</button></a>
+    </div>
+
+    <div class="hidden" id="popup">Your tickets have been reserved <br> <br>
+      <button id="cancel4" class="closebutton" onclick="show()">Close</button>
+    </div>
+
+    <script src="js/MovieTicket.js" charset="utf-8"></script>
+  </body>
+</html>

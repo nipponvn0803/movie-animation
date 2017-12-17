@@ -1,0 +1,112 @@
+body {
+  background: black;
+}
+
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.2,1.2);
+}
+
+.movie-banner{
+  width: 100vw;
+  height: 33.33vw;
+  min-width: 700px;
+}
+
+.main-banner{
+    width: 100vw;
+    height: 33.33vw;
+    min-width: 1500px;
+}
+
+#trailer-container{
+  display: inline-block;
+  width: 100vw;
+  height: 33.33vw;
+  min-width: 700px;
+  min-height: 500px;
+}
+
+#trailer-video{
+  width: 60vw;
+  height: 30vw;
+  min-width: 420px;
+}
+
+#movie-info{
+  float: right;
+  width: 40vw;
+  height: 30vw;
+  min-width: 280px;
+  min-height: 210px;
+  color: white;
+  text-align: center;
+}
+
+#movie-info h1{
+  line-height: 200%;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+#movie-info p{
+  font-size: 1.5rem;
+}
+
+.get-ticket{
+   min-width: 50px;
+   height: 50px;
+   width: 10vw;
+   color: white;
+   text-align: center;
+   font-size: 1rem;
+   background-color: #E51837;
+   font-weight: bold;
+   border: none;
+   border-radius: 30px;
+ }
+
+#movie-desc{
+  display: inline-block;
+  width: 100vw;
+  height: 33.33vw;
+  min-width: 700px;
+  height: 30vw;
+  min-height: 210px;
+}
+
+#catchy-title{
+  float: left;
+  width: 30vw;
+  height: 30vw;
+  min-width: 210px;
+  min-height: 210px;
+  color: white;
+  text-align: center;
+}
+
+#catchy-title h1{
+  font-size: 6rem;
+  font-weight: bold;
+  margin-top: 20vw;
+}
+
+#long-desc{
+  float: right;
+  width: 70vw;
+  height: 30vw;
+  min-width: 450px;
+  min-height: 210px;
+  color: white;
+  text-align: justify;
+  margin-top: 20vw;
+}
+
+#long-desc p{
+  font-size: 1.2rem;
+  margin-left: 7vw;
+}
+
+p.first-line{
+  margin-top: 10vw;
+}

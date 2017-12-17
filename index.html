@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>North Kino</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js" charset="utf-8"></script>
+      <link rel="stylesheet" href="css/custom.css">
+      <script src="gsapIntro_files/TweenMax.min.js.download" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <div id="navbar-movie">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">North Kino</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#two-tabs" id="Movies-nav">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Choose-Theaters.html">Schedules</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Choose-Theaters.html" id="navbardrop" data-toggle="dropdown">Theaters</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="Helsinki.html">Helsinki</a>
+                <a class="dropdown-item" href="Turku.html">Turku</a>
+                <a class="dropdown-item" href="Tampere.html">Tampere</a>
+                <a class="dropdown-item" href="Oulu.html">Oulu</a>
+                <a class="dropdown-item" href="Rovaniemi,html">Rovaniemi</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="movie-banner-container">
+      <a href="MovieDetail1.html"> <img class="movie-banner" id="movie-banner-1" src="image/1.jpg" alt=""> </a>
+      <a href="#"> <img class="movie-banner" id="movie-banner-2" src="image/5.jpg" alt=""> </a>
+      <a href="MovieDetail3.html"> <img class="movie-banner" id="movie-banner-3" src="image/3.jpg" alt=""> </a>
+      <a href="MovieDetail2.html"> <img class="movie-banner" id="movie-banner-4" src="image/2.jpg" alt=""> </a>
+      <a href="MovieDetail4.html"> <img class="movie-banner" id="movie-banner-5" src="image/4.jpg" alt=""> </a>
+      <a href="#"> <img class="movie-banner" id="movie-banner-6" src="image/1.jpg" alt=""> </a>
+      <a href="#"> <img class="movie-banner" id="movie-banner-7" src="image/5.jpg" alt=""> </a>
+      <a href="#"> <img class="movie-banner" id="movie-banner-8" src="image/1.jpg" alt=""> </a>
+      <a href="#"> <img class="movie-banner" id="movie-banner-9" src="image/2.jpg" alt=""> </a>
+      <a href="#"> <img class="movie-banner" id="movie-banner-10" src="image/4.jpg" alt=""> </a>
+    </div>
+
+    <button id="minimize-button" class="button" onclick="showAll()">Show All</button>
+
+    <div class="btn-group" id="two-tabs">
+      <button type="button" id="showing-tab" class="btn tab-button-1" onclick="nowShowing()">Now Showing</button>
+      <button type="button" id="coming-tab" class="btn tab-button-1 active" onclick="upComing()">Upcoming</button>
+    </div>
+
+    <div id="Showing-movie">
+      <div id="movie-poster-container1" class="movie-poster-container">
+        <a href="MovieDetail1.html"> <img class="movie-poster" id="movie-poster-1" src="image/poster1.jpg"> </a>
+        <a href="MovieDetail2.html"> <img class="movie-poster" id="movie-poster-2" src="image/poster2.jpg"> </a>
+        <a href="MovieDetail3.html"> <img class="movie-poster" id="movie-poster-3" src="image/poster3.jpg"> </a>
+        <a href="MovieDetail4.html"> <img class="movie-poster" id="movie-poster-4" src="image/poster4.jpg"> </a>
+      </div>
+
+      <div id="" class="title-container">
+        <p class="title-under">Justice League</p>
+        <p class="title-under">Central Intelligence</p>
+        <p class="title-under">Thor: Ragnarok</p>
+        <p class="title-under">Suicide Squad</p>
+      </div>
+
+      <div id="button-container1" class="button-container">
+        <a href="MovieTicket1.html"><button class="get-ticket button" onclick="">Get Ticket</button></a>
+        <a href="MovieTicket2.html"><button class="get-ticket button" onclick="">Get Ticket</button></a>
+        <a href="MovieTicket3.html"><button class="get-ticket button" onclick="">Get Ticket</button></a>
+        <a href="MovieTicket4.html"><button class="get-ticket button" onclick="">Get Ticket</button></a>
+      </div>
+
+      <div id="movie-poster-container2" class="movie-poster-container">
+        <a href="#"> <img class="movie-poster" id="movie-poster-5" src="image/poster1.jpg"> </a>
+        <a href="#"> <img class="movie-poster" id="movie-poster-6" src="image/poster2.jpg"> </a>
+        <a href="#"> <img class="movie-poster" id="movie-poster-7" src="image/poster10.jpg"> </a>
+        <a href="#"> <img class="movie-poster" id="movie-poster-8" src="image/poster4.jpg"> </a>
+      </div>
+
+      <div id="" class="title-container">
+        <p class="title-under">Justice League</p>
+        <p class="title-under">Central Intelligence</p>
+        <p class="title-under">Lego Movie</p>
+        <p class="title-under">Suicide Squad</p>
+      </div>
+
+      <div id="button-container2" class="button-container">
+        <a href="#"><button class="get-ticket button" onclick="">Get Ticket</button></a>
+        <a href="#"><button class="get-ticket button" onclick="">Get Ticket</button></a>
+        <a href="#"><button class="get-ticket button" onclick="">Get Ticket</button></a>
+        <a href="#"><button class="get-ticket button" onclick="">Get Ticket</button></a>
+      </div>
+    </div>
+
+    <div id="Coming-movie">
+      <div id="movie-poster-container3" class="movie-poster-container">
+        <a href="#"> <img class="movie-poster movie-poster-left" id="coming-poster-1" src="image/poster5.jpg"> </a>
+        <a href="#"> <img class="movie-poster movie-poster-left" id="coming-poster-2" src="image/poster6.jpg"> </a>
+        <a href="#"> <img class="movie-poster" id="coming-poster-3" src="image/poster7.jpg"> </a>
+        <a href="#"> <img class="movie-poster" id="coming-poster-4" src="image/poster8.jpg"> </a>
+      </div>
+
+      <div id="" class="title-container">
+        <p class="title-under-left">Civil War</p>
+        <p class="title-under-left">La La Land</p>
+        <p class="title-under">Love, Rosie</p>
+        <p class="title-under">About Time</p>
+      </div>
+
+      <div id="button-container3" class="button-container">
+        <a href="#"><button class="get-ticket advance-ticket button" onclick="">Advance Ticket</button></a>
+        <a href="#"><button class="get-ticket advance-ticket button" onclick="">Advance Ticket</button></a>
+        <a href="#"><button class="get-ticket button" onclick="">Advance Ticket</button></a>
+        <a href="#"><button class="get-ticket button" onclick="">Advance Ticket</button></a>
+      </div>
+
+      <div id="movie-poster-container4" class="movie-poster-container">
+        <a href="#"> <img class="movie-poster movie-poster-left" id="coming-poster-5" src="image/poster5.jpg"> </a>
+        <a href="#"> <img class="movie-poster movie-poster-left" id="coming-poster-6" src="image/poster6.jpg"> </a>
+        <a href="#"> <img class="movie-poster" id="coming-poster-7" src="image/poster7.jpg"> </a>
+        <a href="#"> <img class="movie-poster" id="coming-poster-8" src="image/poster8.jpg"> </a>
+      </div>
+
+      <div id="" class="title-container">
+        <p class="title-under-left">Civil War</p>
+        <p class="title-under-left">La La Land</p>
+        <p class="title-under">Love, Rosie</p>
+        <p class="title-under">About Time</p>
+      </div>
+
+      <div id="button-container5" class="button-container">
+        <a href="#"><button class="get-ticket advance-ticket button" onclick="">Advance Ticket</button></a>
+        <a href="#"><button class="get-ticket advance-ticket button" onclick="">Advance Ticket</button></a>
+        <a href="#"><button class="get-ticket button" onclick="">Advance Ticket</button></a>
+        <a href="#"><button class="get-ticket button" onclick="">Advance Ticket</button></a>
+      </div>
+    </div>
+
+    <script src="js/custom.js" charset="utf-8"></script>
+  </body>
+</html>

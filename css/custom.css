@@ -1,0 +1,155 @@
+body {
+  background: black;
+  overflow-x: hidden;
+}
+
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.1,1.1);
+}
+
+@font-face {
+  font-family: Bebas;
+  src: url('Font/Bebas/bebas.ttf') format('truetype'),
+       url('Font/Bebas/bebas.woff') format('woff');
+}
+
+#navbar-movie{
+  font-weight: bold;
+}
+
+.navbar-collapse{
+  font-size: 20px;
+}
+
+.navbar-brand{
+  font-size: 30px;
+}
+
+.movie-banner-container{
+  width: 15000px;
+  height: 33.33vw;
+  min-width: 700px;
+  display: inline-block;
+}
+
+.movie-banner{
+  width: 100vw;
+  height: 33.33vw;
+  min-width: 700px;
+}
+
+#movie-banner-1, #movie-banner-6{
+  clip-path: inset(0vw 80vw 0px 0vw);
+  margin-right: -100.25vw;
+}
+
+#movie-banner-2, #movie-banner-7{
+  clip-path: inset(0vw 60vw 0px 20vw);
+  margin-right: -100.25vw;
+}
+
+#movie-banner-3, #movie-banner-8{
+  clip-path: inset(0vw 40vw 0px 40vw);
+  margin-right: -100.25vw;
+}
+
+#movie-banner-4, #movie-banner-9{
+  clip-path: inset(0vw 20vw 0px 60vw);
+  margin-right: -100.25vw;
+}
+
+#movie-banner-5, #movie-banner-10{
+  clip-path: inset(0vw 0vw 0px 80vw);
+
+}
+
+#minimize-button{
+  min-width: 100px;
+  height: 50px;
+  width: 10vw;
+  margin: 40px 45vw;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #E51837;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+}
+
+
+#two-tabs{
+  width: 30vw;
+  height: 50px;
+  min-width: 200px;
+  margin: 20px 35vw;
+}
+
+.tab-button-1{
+  width: 15vw;
+  min-width: 100px;
+  font-size: 1.5rem;
+  border-radius: 4rem;
+}
+
+.btn:active, .active{
+    background-color: black !important;
+    color: white;
+    border: 1px solid white !important;
+}
+
+.movie-poster{
+  width: 12vw;
+  height: 18.6vw;
+  min-width: 90px;
+}
+
+.movie-poster-container{
+  width: 60vw;
+  height: 18.6vw;
+  min-width: 450px;
+  margin: 50px 20vw 20px 20vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container{
+  width: 58vw;
+  height: 50px;
+  margin: 45px 21vw 20px 21vw;
+  min-width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.get-ticket{
+   min-width: 50px;
+   height: 50px;
+   width: 10vw;
+   color: white;
+   text-align: center;
+   font-size: 1rem;
+   background-color: #E51837;
+   font-weight: bold;
+   border: none;
+   border-radius: 30px;
+ }
+
+ .title-container{
+   width: 58vw;
+   height: 25px;
+   margin: 20px 21vw 20px 21vw;
+   min-width: 450px;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+ }
+
+ p.title-under, p.title-under-left{
+   min-width: 50px;
+   height: 50px;
+   width: 10vw;
+   font-size: 1.4rem;
+   color: white;
+ }

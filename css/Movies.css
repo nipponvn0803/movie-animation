@@ -1,0 +1,64 @@
+body{
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+.all{
+
+}
+a{
+  text-decoration: none !important;
+}
+
+#movietime{
+  width: 100vw;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+#now:hover, #soon:hover{
+  cursor: pointer;
+}
+
+#nowshowing, #coming-soon{
+
+}
+
+.poster-row{
+  margin-top: 80px;
+  text-align: justify;
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+img{
+  opacity: 0.8;
+  width: 181px;
+  height: 279px;
+}
+
+img:hover{
+  opacity: 1;
+  transform: scale(1.1, 1.1);
+}
+
+.pandb, .pandbsoon{
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+}
+
+.stretch {
+    width: 80vw;
+    display: inline-block;
+}
+
+.pandb button{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.pandbsoon button{
+  margin-top: 20px;
+  margin-left: -10px;
+}

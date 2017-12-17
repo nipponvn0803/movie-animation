@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>North Kino</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js" charset="utf-8"></script>
+      <link rel="stylesheet" href="css/custom.css">
+      <link rel="stylesheet" href="css/choose.css">
+      <script src="gsapIntro_files/TweenMax.min.js.download" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="navbar-movie">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">North Kino</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#two-tabs" id="Movies-nav">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Choose-Theaters.html">Schedules</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Choose-Theaters.html" id="navbardrop" data-toggle="dropdown">Theaters</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="Helsinki.html">Helsinki</a>
+                <a class="dropdown-item" href="Turku.html">Turku</a>
+                <a class="dropdown-item" href="Tampere.html">Tampere</a>
+                <a class="dropdown-item" href="Oulu.html">Oulu</a>
+                <a class="dropdown-item" href="Rovaniemi,html">Rovaniemi</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="button-container-choose">
+      <select id="ChoosePlace" class="select-style">
+        <option>Select Theater</option>
+        <option>Helsinki</option>
+        <option>Turku</option>
+        <option>Tampere</option>
+        <option>Oulu</option>
+        <option>Rovaniemi</option>
+      </select>
+
+      <select id="ChooseDate" class="select-style" onchange="showMovie()">
+        <option>Select Date</option>
+        <option>25/12/2017</option>
+        <option>26/12/2017</option>
+        <option>27/12/2017</option>
+        <option>28/12/2017</option>
+        <option>29/12/2017</option>
+      </select>
+    </div>
+
+    <div id="all-current-movie">
+      <div class="choose-theater-movie-container">
+        <a href="MovieDetail1.html"> <img class="poster" src="image/poster1.jpg" alt=""></a>
+
+        <div class="name-option">
+          <h1 class="name">Justice League</h1>
+          <div class="time">
+            <button class="time-button">8:45am</button>
+            <button class="time-button">10:15am</button>
+            <button class="time-button">11:45am</button>
+          </div>
+          <div class="time">
+            <button class="time-button">9:45pm</button>
+            <button class="time-button">10:45pm</button>
+          </div>
+          <div class="choose-thater-ticket">
+            <a href="MovieTicket1.html"><button class="get-ticket button" onclick="">Get Ticket</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="choose-theater-movie-container">
+      <a href="MovieDetail2.html"> <img class="poster" src="image/poster2.jpg" alt=""></a>
+
+        <div class="name-option">
+          <h1 class="name">Central Intelligence</h1>
+          <div class="time">
+            <button class="time-button">8:45am</button>
+            <button class="time-button">10:15am</button>
+            <button class="time-button">11:45am</button>
+          </div>
+          <div class="time">
+            <button class="time-button">9:45pm</button>
+            <button class="time-button">10:45pm</button>
+          </div>
+          <div class="choose-thater-ticket">
+            <a href="MovieTicket2.html"><button class="get-ticket button" onclick="">Get Ticket</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="choose-theater-movie-container">
+        <a href="MovieDetail3.html"> <img class="poster" src="image/poster3.jpg" alt=""></a>
+
+        <div class="name-option">
+          <h1 class="name">Thor-Ragnarok</h1>
+          <div class="time">
+            <button class="time-button">8:45am</button>
+            <button class="time-button">10:15am</button>
+            <button class="time-button">11:45am</button>
+          </div>
+          <div class="time">
+            <button class="time-button">9:45pm</button>
+            <button class="time-button">10:45pm</button>
+          </div>
+          <div class="choose-thater-ticket">
+            <a href="MovieTicket3.html"><button class="get-ticket button" onclick="">Get Ticket</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="choose-theater-movie-container">
+        <a href="MovieDetail4.html"> <img class="poster" src="image/poster4.jpg" alt=""></a> 
+
+        <div class="name-option">
+          <h1 class="name">Suicide Squad</h1>
+          <div class="time">
+            <button class="time-button">8:45am</button>
+            <button class="time-button">10:15am</button>
+            <button class="time-button">11:45am</button>
+          </div>
+          <div class="time">
+            <button class="time-button">9:45pm</button>
+            <button class="time-button">10:45pm</button>
+          </div>
+          <div class="choose-thater-ticket">
+            <a href="MovieTicket4.html"><button class="get-ticket button" onclick="">Get Ticket</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function showMovie(){
+        document.getElementById('all-current-movie').style.opacity = '1';
+        document.getElementById('all-current-movie').style.marginTop = '5vh';
+      }
+    </script>
+
+  </body>
+</html>

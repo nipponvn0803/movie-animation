@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>North Kino</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js" charset="utf-8"></script>
+      <link rel="stylesheet" href="css/MovieDetail.css">
+      <link rel="stylesheet" href="css/custom.css">
+      <script src="gsapIntro_files/TweenMax.min.js.download" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="navbar-movie">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">North Kino</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#two-tabs" id="Movies-nav">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Choose-Theaters.html">Schedules</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="Choose-Theaters.html" id="navbardrop" data-toggle="dropdown">Theaters</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="Helsinki.html">Helsinki</a>
+                <a class="dropdown-item" href="Turku.html">Turku</a>
+                <a class="dropdown-item" href="Tampere.html">Tampere</a>
+                <a class="dropdown-item" href="Oulu.html">Oulu</a>
+                <a class="dropdown-item" href="Rovaniemi,html">Rovaniemi</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="movie-banner">
+      <img class="main-banner" src="image/4.jpg" alt="">
+    </div>
+
+    <div class="" id="trailer-container">
+      <iframe id="trailer-video" src="https://www.youtube.com/embed/CmRih_VtVAs?ecver=1" frameborder="0"></iframe>
+      <div class="" id="movie-info">
+        <h1>Suicide Squad</h1>
+        <p>2hr00mins | PG-18</p>
+        <p>Action & Adventure</p>
+        <p>Rating: 60%</p>
+        <a href="MovieTicket4.html"><button class="get-ticket button" onclick="">Get Ticket</button></a>
+      </div>
+    </div>
+
+    <div class="" id="movie-desc" style="background-image: url('image/back4.jpg'); background-size: 1500px 700px;">
+      <div class="" id="catchy-title">
+        <h1>Game up</h1>
+      </div>
+      <div class="" id="long-desc">
+        <p class="first-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+        <p> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
+        <p> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint</p>
+        <p> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+
+    <script src="js/custom.js" charset="utf-8"></script>
+    <script src="js/MovieDetail.js" charset="utf-8"></script>
+  </body>
+</html>
